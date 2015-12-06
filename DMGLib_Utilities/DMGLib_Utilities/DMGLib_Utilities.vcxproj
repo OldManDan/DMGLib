@@ -77,9 +77,10 @@
     <ClCompile Include="src\Windows\TextUtilities.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Data Structures\Pair.hpp" />
+    <ClInclude Include="src\Data Structures\Vector2D.h" />
     <ClInclude Include="src\Rng.h" />
     <ClInclude Include="src\Singleton.h" />
-    <ClInclude Include="src\Vector2D.h" />
     <ClInclude Include="src\Windows\TextUtilities.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

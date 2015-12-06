@@ -4,6 +4,9 @@
     <Filter Include="Windows">
       <UniqueIdentifier>{f118202d-9f1d-4d61-a82f-bd745b96164c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Data Structures">
+      <UniqueIdentifier>{be2ab296-ca7a-415a-b37b-94ed7dfbb384}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Windows\TextUtilities.cpp">
@@ -16,7 +19,12 @@
       <Filter>Windows</Filter>
     </ClInclude>
     <ClInclude Include="src\Rng.h" />
-    <ClInclude Include="src\Vector2D.h" />
     <ClInclude Include="src\Singleton.h" />
+    <ClInclude Include="src\Data Structures\Pair.hpp">
+      <Filter>Data Structures</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Data Structures\Vector2D.h">
+      <Filter>Data Structures</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
