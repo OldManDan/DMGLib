@@ -13,17 +13,24 @@
 #define __CONSOLERENDERDEVICE_H__
 
 #include "../RenderSystem/RenderDevice.h"
+#include "DataStructures/Vector2D.h"
+#include <functional>
 
+using namespace DMGLib_Utilities;
 
 namespace DMGLib_RenderSystem
 {
+    typedef std::function<Vector2D* (void)> CoordinatesCallback;
 
     class ConsoleRenderDevice : RenderDevice
     {
         char m_char;
 
+        // Callback function to get the coordinates to render this device at.
+        CoordinatesCallback m_location;
+
     public:
-        ConsoleRenderDevice (const char &newChar);
+        ConsoleRenderDevice (const char &newChar, CoordinatesCallback);
         ~ConsoleRenderDevice ();
         
         // Renders this device's character to the console window.

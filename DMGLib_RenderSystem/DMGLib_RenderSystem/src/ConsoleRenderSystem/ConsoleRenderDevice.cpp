@@ -17,7 +17,7 @@ using namespace DMGLib_RenderSystem;
 //-----------------------------------------------------------------------------------------------------------------
 // Constructor, sets m_char to the input parameter "&newChar".
 //-----------------------------------------------------------------------------------------------------------------
-ConsoleRenderDevice::ConsoleRenderDevice (const char &newChar)
+ConsoleRenderDevice::ConsoleRenderDevice (const char &newChar, CoordinatesCallback)
     : m_char (newChar)
 { }
 
