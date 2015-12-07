@@ -7,24 +7,36 @@
     <Filter Include="DataStructures">
       <UniqueIdentifier>{be2ab296-ca7a-415a-b37b-94ed7dfbb384}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{10dbc328-e227-42f2-8b9a-b2b6802019a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DesignPatternTemplates">
+      <UniqueIdentifier>{bc979831-d23e-47b4-9ed7-62bf427d2589}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Windows\TextUtilities.cpp">
       <Filter>Windows</Filter>
     </ClCompile>
-    <ClCompile Include="src\Rng.cpp" />
+    <ClCompile Include="src\Math\Rng.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Windows\TextUtilities.h">
       <Filter>Windows</Filter>
     </ClInclude>
-    <ClInclude Include="src\Rng.h" />
-    <ClInclude Include="src\Singleton.h" />
     <ClInclude Include="src\DataStructures\Pair.hpp">
       <Filter>DataStructures</Filter>
     </ClInclude>
     <ClInclude Include="src\DataStructures\Vector2D.h">
       <Filter>DataStructures</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Math\Rng.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DesignPatternTemplates\Singleton.h">
+      <Filter>DesignPatternTemplates</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

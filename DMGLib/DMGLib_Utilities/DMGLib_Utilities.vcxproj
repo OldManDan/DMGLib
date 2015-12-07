@@ -73,14 +73,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\Rng.cpp" />
+    <ClCompile Include="src\Math\Rng.cpp" />
     <ClCompile Include="src\Windows\TextUtilities.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\DataStructures\Pair.hpp" />
     <ClInclude Include="src\DataStructures\Vector2D.h" />
-    <ClInclude Include="src\Rng.h" />
-    <ClInclude Include="src\Singleton.h" />
+    <ClInclude Include="src\DesignPatternTemplates\Singleton.h" />
+    <ClInclude Include="src\Math\Rng.h" />
     <ClInclude Include="src\Windows\TextUtilities.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
