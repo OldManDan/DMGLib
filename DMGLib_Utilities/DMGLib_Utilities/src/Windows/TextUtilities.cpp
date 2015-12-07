@@ -59,6 +59,27 @@ const void DMGLib_Utilities::TextUtilities::SetConsoleSize (unsigned int x, unsi
     GetWindowRect (console, &r); // Stores the consoles current dimensions
 
     MoveWindow (console, r.left, r.top, x, y, TRUE);
+
+    
+#if 0
+    //-----------------------------------------------------------------------------------------------------------------
+    // Work in progress:
+    // Remove the scrollbars from the console window.
+    //-----------------------------------------------------------------------------------------------------------------
+    HANDLE hOut;
+    CONSOLE_SCREEN_BUFFER_INFO SBInfo;
+    COORD NewSBSize;
+    int Status;
+
+    hOut = GetStdHandle (STD_OUTPUT_HANDLE);
+
+    GetConsoleScreenBufferInfo (hOut, &SBInfo);
+    NewSBSize.X = SBInfo.dwSize.X - 2;
+    NewSBSize.Y = SBInfo.dwSize.Y;
+
+    Status = SetConsoleScreenBufferSize (hOut, NewSBSize);
+#endif
+
 }
 
 #endif
