@@ -29,13 +29,6 @@ namespace DMGLib_Utilities
 		    : X(x)
 		    , Y(y) { }
 
-	    // Adds the values of nX and nY to the current X and Y values;
-	    //void DeltaSet(int nX, int nY)
-	    //{
-		   // X += nX;
-		   // Y += nY;
-	    //}
-
 	    // Sets X and Y to nX and nY respectively.
 	    void Set(int nX, int nY)
 	    {
@@ -54,7 +47,7 @@ namespace DMGLib_Utilities
 
 	    // Calculates the direction that this Vector2D needs to move in, in order to reach the target
 	    // Returns a NEW Vector2D that must be deleted at some point.
-	    Vector2D* GetDelta(const Vector2D* right)
+	    Vector2D* GetDirection(const Vector2D* right)
 	    {
 		    int nX = 0;
 		    int nY = 0;
