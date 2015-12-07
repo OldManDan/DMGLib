@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="RenderSystem">
+      <UniqueIdentifier>{b0673def-987f-4708-994d-af4acbb99d95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConsoleRenderSystem">
+      <UniqueIdentifier>{2c954a4f-4616-4cb5-88f7-264b5d498f7f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\RenderSystem\RenderSystem.h">
+      <Filter>RenderSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RenderSystem\RenderDevice.h">
+      <Filter>RenderSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ConsoleRenderSystem\ConsoleRenderDevice.h">
+      <Filter>ConsoleRenderSystem</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\RenderSystem\RenderSystem.cpp">
+      <Filter>RenderSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ConsoleRenderSystem\ConsoleRenderDevice.cpp">
+      <Filter>ConsoleRenderSystem</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
