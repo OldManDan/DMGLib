@@ -8,7 +8,7 @@
 #include <time.h>
 #include <stdlib.h>
 
-using namespace DMGLibUtilities;
+using namespace DMGLib_Utilities;
 
 RNG::RNG()
 {

@@ -14,7 +14,7 @@
 #ifndef __PAIR_HPP__
 #define __PAIR_HPP__
 
-namespace DMGLibUtilities
+namespace DMGLib_Utilities
 {
     template <typename FType, typename SType>
     struct Pair

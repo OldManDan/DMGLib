@@ -9,12 +9,12 @@
 #include <windows.h>
 #include "TextUtilities.h"
 
-using namespace DMGLibUtilities::TextUtilities;
+using namespace DMGLib_Utilities::TextUtilities;
 
 //---------------------------------------------------------------------------------------------------------------------
 // Makes the console text Blue
 //---------------------------------------------------------------------------------------------------------------------
-const void DMGLibUtilities::TextUtilities::BlueText()
+const void DMGLib_Utilities::TextUtilities::BlueText()
 {
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_BLUE);
 }
@@ -22,7 +22,7 @@ const void DMGLibUtilities::TextUtilities::BlueText()
 //---------------------------------------------------------------------------------------------------------------------
 // Makes the console text Green
 //---------------------------------------------------------------------------------------------------------------------
-const void DMGLibUtilities::TextUtilities::GreenText()
+const void DMGLib_Utilities::TextUtilities::GreenText()
 {
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_GREEN);
 }
@@ -30,7 +30,7 @@ const void DMGLibUtilities::TextUtilities::GreenText()
 //---------------------------------------------------------------------------------------------------------------------
 // Makes the console text White
 //---------------------------------------------------------------------------------------------------------------------
-const void DMGLibUtilities::TextUtilities::WhiteText()
+const void DMGLib_Utilities::TextUtilities::WhiteText()
 {
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
 }
@@ -38,18 +38,27 @@ const void DMGLibUtilities::TextUtilities::WhiteText()
 //---------------------------------------------------------------------------------------------------------------------
 // Makes the console text Red
 //---------------------------------------------------------------------------------------------------------------------
-const void DMGLibUtilities::TextUtilities::RedText()
+const void DMGLib_Utilities::TextUtilities::RedText()
 {
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED);
 }
 
-const void DMGLibUtilities::TextUtilities::SetCursorPosition (int x, int y)
+const void DMGLib_Utilities::TextUtilities::SetCursorPosition (unsigned int x, unsigned int y)
 {
     COORD coord;
 
     coord.X = x;
     coord.Y = y;
     SetConsoleCursorPosition (GetStdHandle (STD_OUTPUT_HANDLE), coord);
+}
+
+const void DMGLib_Utilities::TextUtilities::SetConsoleSize (unsigned int x, unsigned int y)
+{
+    HWND console = GetConsoleWindow ();
+    RECT r;
+    GetWindowRect (console, &r); // Stores the consoles current dimensions
+
+    MoveWindow (console, r.left, r.top, x, y, TRUE);
 }
 
 #endif

@@ -7,7 +7,7 @@
 #ifndef __RNG_H__
 #define __RNG_H__
 
-namespace DMGLibUtilities
+namespace DMGLib_Utilities
 {
     class RNG
     {

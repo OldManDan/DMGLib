@@ -9,7 +9,7 @@
 
 #include <math.h>
 
-namespace DMGLibUtilities
+namespace DMGLib_Utilities
 {
 
     // Simple class that holds an X and a Y coordinate, and contains various functions to support its use
