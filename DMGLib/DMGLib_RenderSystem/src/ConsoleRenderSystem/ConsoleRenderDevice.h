@@ -20,17 +20,17 @@ using namespace DMGLib_Utilities;
 
 namespace DMGLib_RenderSystem
 {
-    typedef std::function<Vector2D* (void)> CoordinatesCallback;
+    typedef std::function<const Vector2D* (void)> CoordinatesCallback;
 
     class ConsoleRenderDevice : RenderDevice
     {
         char m_char;
 
         // Callback function to get the coordinates to render this device at.
-        CoordinatesCallback m_location;
+        CoordinatesCallback m_locationCallback;
 
     public:
-        ConsoleRenderDevice (const char &newChar, CoordinatesCallback);
+        ConsoleRenderDevice (const char &newChar, CoordinatesCallback callback);
         ~ConsoleRenderDevice ();
         
         // Renders this device's character to the console window.
