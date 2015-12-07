@@ -4,7 +4,7 @@
     <Filter Include="Windows">
       <UniqueIdentifier>{f118202d-9f1d-4d61-a82f-bd745b96164c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Data Structures">
+    <Filter Include="DataStructures">
       <UniqueIdentifier>{be2ab296-ca7a-415a-b37b-94ed7dfbb384}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -20,11 +20,11 @@
     </ClInclude>
     <ClInclude Include="src\Rng.h" />
     <ClInclude Include="src\Singleton.h" />
-    <ClInclude Include="src\Data Structures\Pair.hpp">
-      <Filter>Data Structures</Filter>
+    <ClInclude Include="src\DataStructures\Pair.hpp">
+      <Filter>DataStructures</Filter>
     </ClInclude>
-    <ClInclude Include="src\Data Structures\Vector2D.h">
-      <Filter>Data Structures</Filter>
+    <ClInclude Include="src\DataStructures\Vector2D.h">
+      <Filter>DataStructures</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
