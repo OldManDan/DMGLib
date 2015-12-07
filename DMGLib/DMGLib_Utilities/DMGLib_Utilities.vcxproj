@@ -81,6 +81,7 @@
     <ClInclude Include="src\DataStructures\Vector2D.h" />
     <ClInclude Include="src\DesignPatternTemplates\Singleton.h" />
     <ClInclude Include="src\Math\Rng.h" />
+    <ClInclude Include="src\Misc\Macros.h" />
     <ClInclude Include="src\Windows\TextUtilities.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

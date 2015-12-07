@@ -13,6 +13,9 @@
     <Filter Include="DesignPatternTemplates">
       <UniqueIdentifier>{bc979831-d23e-47b4-9ed7-62bf427d2589}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Misc">
+      <UniqueIdentifier>{97410cb0-6492-4d3c-ad69-0dc2f4b0e9db}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Windows\TextUtilities.cpp">
@@ -37,6 +40,9 @@
     </ClInclude>
     <ClInclude Include="src\DesignPatternTemplates\Singleton.h">
       <Filter>DesignPatternTemplates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Misc\Macros.h">
+      <Filter>Misc</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
