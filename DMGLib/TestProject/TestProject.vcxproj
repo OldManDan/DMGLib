@@ -53,7 +53,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\DMGLib_Utilities\DMGLib_Utilities\src;$(SolutionDir)../DMGLib_RenderSystem/DMGLib_RenderSystem/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)../DMGLib_Utilities/src/;$(ProjectDir)../DMGLib_RenderSystem/src/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -70,7 +70,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\DMGLib_Utilities\DMGLib_Utilities\src;$(SolutionDir)../DMGLib_RenderSystem/DMGLib_RenderSystem/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)../DMGLib_Utilities/src/;$(ProjectDir)../DMGLib_RenderSystem/src/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -83,10 +83,10 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\DMGLib_RenderSystem\DMGLib_RenderSystem\DMGLib_RenderSystem.vcxproj">
+    <ProjectReference Include="..\DMGLib_RenderSystem\DMGLib_RenderSystem.vcxproj">
       <Project>{6bdb309a-bd05-4831-90f9-7782e1ed9149}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\DMGLib_Utilities\DMGLib_Utilities\DMGLib_Utilities.vcxproj">
+    <ProjectReference Include="..\DMGLib_Utilities\DMGLib_Utilities.vcxproj">
       <Project>{4c7d77e8-484e-41c7-8dbd-92c3969c3c3b}</Project>
     </ProjectReference>
   </ItemGroup>
