@@ -16,6 +16,9 @@
     <Filter Include="Misc">
       <UniqueIdentifier>{97410cb0-6492-4d3c-ad69-0dc2f4b0e9db}</UniqueIdentifier>
     </Filter>
+    <Filter Include="DesignPatternTemplates\Command">
+      <UniqueIdentifier>{bdb69d29-7569-40ef-9b60-6ff6bf873053}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Windows\TextUtilities.cpp">
@@ -43,6 +46,9 @@
     </ClInclude>
     <ClInclude Include="src\Misc\Macros.h">
       <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DesignPatternTemplates\Command\Command.h">
+      <Filter>DesignPatternTemplates\Command</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

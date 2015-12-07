@@ -10,7 +10,7 @@
 //-----------------------------------------------------------------------------------------------------------------
 
 
-#include "vld.h"
+//#include "vld.h"
 #include "DataStructures/Vector2D.h"
 #include "ConsoleRenderSystem/ConsoleRenderDevice.h"
 #include <conio.h>
