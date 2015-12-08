@@ -22,7 +22,7 @@ namespace DMGLib_RenderSystem
 {
     typedef std::function<const Vector2D* (void)> CoordinatesCallback;
 
-    class ConsoleRenderDevice : RenderDevice
+    class ConsoleRenderDevice : public RenderDevice
     {
         char m_char;
 

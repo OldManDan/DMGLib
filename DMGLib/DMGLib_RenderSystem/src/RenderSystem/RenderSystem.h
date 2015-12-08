@@ -6,6 +6,8 @@
 //-----------------------------------------------------------------------------------------------------------------
 // Notes:
 // 
+// This needs to be subclassed from a pure virtual ComponentSystem interface.
+// The RenderSystem knows about its components, but no other types of components.
 // 
 //-----------------------------------------------------------------------------------------------------------------
 
@@ -19,22 +21,25 @@ namespace DMGLib_RenderSystem
 {
     class RenderDevice;
 
+    // 
     class RenderSystem
     {
-        // List of all renderables present in the scene.
-        std::vector<RenderDevice* > m_renderables;
-
+    protected:
         // Renders all devices in the m_renderables list
-        void RenderAll ();
+        virtual void RenderAll () = 0;
 
     public:
-        RenderSystem ();
-        ~RenderSystem ();
+        virtual ~RenderSystem ();
 
         // Updates all renderables.
-        void Update ();
-    };
+        virtual void Update () = 0;
 
+        // Links a RenderDevice to this RenderSystem
+        virtual void AttachDevice (RenderDevice* pDevice) = 0;
+
+        // Unlinks a RenderDevice to this RenderSystem
+        virtual void DettachDevice (RenderDevice* pDevice) = 0;
+    };
 }
 
 

@@ -81,12 +81,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="src\ConsoleRenderSystem\ConsoleRenderDevice.h" />
+    <ClInclude Include="src\ConsoleRenderSystem\ConsoleRenderSystem.h" />
     <ClInclude Include="src\RenderSystem\RenderDevice.h" />
     <ClInclude Include="src\RenderSystem\RenderSystem.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\ConsoleRenderSystem\ConsoleRenderDevice.cpp" />
-    <ClCompile Include="src\RenderSystem\RenderSystem.cpp" />
+    <ClCompile Include="src\ConsoleRenderSystem\ConsoleRenderSystem.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

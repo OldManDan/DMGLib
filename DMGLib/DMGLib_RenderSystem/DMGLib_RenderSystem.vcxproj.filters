@@ -18,12 +18,15 @@
     <ClInclude Include="src\ConsoleRenderSystem\ConsoleRenderDevice.h">
       <Filter>ConsoleRenderSystem</Filter>
     </ClInclude>
+    <ClInclude Include="src\ConsoleRenderSystem\ConsoleRenderSystem.h">
+      <Filter>ConsoleRenderSystem</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\RenderSystem\RenderSystem.cpp">
-      <Filter>RenderSystem</Filter>
-    </ClCompile>
     <ClCompile Include="src\ConsoleRenderSystem\ConsoleRenderDevice.cpp">
+      <Filter>ConsoleRenderSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ConsoleRenderSystem\ConsoleRenderSystem.cpp">
       <Filter>ConsoleRenderSystem</Filter>
     </ClCompile>
   </ItemGroup>
