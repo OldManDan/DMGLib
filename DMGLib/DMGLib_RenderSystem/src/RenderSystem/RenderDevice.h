@@ -22,7 +22,7 @@ namespace DMGLib_RenderSystem
     public:
         
         // Renders this device.
-        virtual void Render () = 0;
+        virtual void Render () const = 0;
     
     };
 

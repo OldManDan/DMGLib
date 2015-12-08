@@ -24,7 +24,7 @@ Vector2D* TestCallback ();
 int main ()
 {
     CoordinatesCallback callback = TestCallback;
-    ConsoleRenderDevice testDevice('@', TestCallback);
+    const ConsoleRenderDevice testDevice('@', TestCallback);
 
     testDevice.Render();
 

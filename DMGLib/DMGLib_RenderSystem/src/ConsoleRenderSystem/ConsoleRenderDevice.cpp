@@ -44,7 +44,7 @@ void ConsoleRenderDevice::SetCharacter (const char &newChar)
 //-----------------------------------------------------------------------------------------------------------------
 // Renders this m_char to the console window.
 //-----------------------------------------------------------------------------------------------------------------
-void ConsoleRenderDevice::Render ()
+void ConsoleRenderDevice::Render () const
 {
     const Vector2D* pCurrentLocation = m_locationCallback ();
     SetCursorPosition(pCurrentLocation->X, pCurrentLocation->Y);

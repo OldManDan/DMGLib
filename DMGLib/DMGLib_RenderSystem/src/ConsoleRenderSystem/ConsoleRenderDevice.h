@@ -34,7 +34,7 @@ namespace DMGLib_RenderSystem
         ~ConsoleRenderDevice ();
         
         // Renders this device's character to the console window.
-        virtual void Render () override;
+        virtual void Render () const override;
 
         // Sets the character for this render device.
         void SetCharacter (const char &newChar);
