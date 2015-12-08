@@ -21,7 +21,6 @@ namespace DMGLib_RenderSystem
 {
     class RenderDevice;
 
-    // 
     class RenderSystem
     {
     protected:
